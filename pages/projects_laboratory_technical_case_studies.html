@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Laboratory - Technical Case Studies | DevPortfolio Pro</title>
+    <meta name="description" content="Deep technical dives into innovative software solutions. Explore detailed case studies, live demos, and architectural decisions behind production-ready applications." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevportfol1526back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary font-inter">
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-8 h-8 text-secondary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7L16 2z"/>
+                        <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span class="text-xl font-bold text-primary">DevPortfolio Pro</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_interactive_technical_showcase.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="projects_laboratory_technical_case_studies.html" class="text-primary font-medium border-b-2 border-secondary pb-1">Projects</a>
+                    <a href="engineering_journey_professional_timeline.html" class="text-text-secondary hover:text-primary transition-colors">Journey</a>
+                    <a href="skills_observatory_dynamic_competency_matrix.html" class="text-text-secondary hover:text-primary transition-colors">Skills</a>
+                    <a href="open_source_contributions_community_impact.html" class="text-text-secondary hover:text-primary transition-colors">Open Source</a>
+                    <a href="contact_command_center_professional_networking_hub.html" class="bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
+                    <a href="homepage_interactive_technical_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="projects_laboratory_technical_case_studies.html" class="block px-3 py-2 text-primary font-medium bg-accent rounded-md">Projects</a>
+                    <a href="engineering_journey_professional_timeline.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Journey</a>
+                    <a href="skills_observatory_dynamic_competency_matrix.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Skills</a>
+                    <a href="open_source_contributions_community_impact.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Open Source</a>
+                    <a href="contact_command_center_professional_networking_hub.html" class="block px-3 py-2 bg-secondary text-primary rounded-md font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary/5 to-secondary/5 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="project-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#project-grid)"/>
+            </svg>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6">
+                    Projects Laboratory
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Deep technical dives into innovative solutions. Each project showcases problem-solving methodology, architectural decisions, and measurable impact.
+                </p>
+                
+                <!-- Project Stats -->
+                <div class="flex flex-wrap justify-center gap-8 text-sm">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-text-secondary">42 Projects Completed</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary">2.8M+ Users Impacted</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                        <span class="text-text-secondary">15 Technologies Mastered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Search Section -->
+    <section class="py-12 bg-background border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Search Bar -->
+                <div class="relative flex-1 max-w-md">
+                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <input type="text" placeholder="Search projects..." class="w-full pl-10 pr-4 py-3 border border-border rounded-xl focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all" id="project-search" />
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-3">
+                    <button class="px-4 py-2 bg-secondary text-primary rounded-lg font-medium hover:bg-secondary/90 transition-colors filter-btn active" data-filter="all">
+                        All Projects
+                    </button>
+                    <button class="px-4 py-2 bg-surface text-text-primary rounded-lg font-medium hover:bg-accent transition-colors filter-btn" data-filter="web">
+                        Web Apps
+                    </button>
+                    <button class="px-4 py-2 bg-surface text-text-primary rounded-lg font-medium hover:bg-accent transition-colors filter-btn" data-filter="mobile">
+                        Mobile
+                    </button>
+                    <button class="px-4 py-2 bg-surface text-text-primary rounded-lg font-medium hover:bg-accent transition-colors filter-btn" data-filter="ai">
+                        AI/ML
+                    </button>
+                    <button class="px-4 py-2 bg-surface text-text-primary rounded-lg font-medium hover:bg-accent transition-colors filter-btn" data-filter="blockchain">
+                        Blockchain
+                    </button>
+                </div>
+                
+                <!-- Reset Filter -->
+                <button class="flex items-center px-4 py-2 text-text-secondary hover:text-primary transition-colors" id="reset-filters">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    Reset
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Spotlight -->
+    <section class="py-20 bg-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Featured Project Spotlight</h2>
+                <p class="text-lg text-text-secondary">Deep dive into the most impactful solution</p>
+            </div>
+            
+            <div class="bg-background rounded-2xl shadow-soft overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <!-- Project Image/Demo -->
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop" alt="AI-Powered Analytics Dashboard" class="w-full h-64 lg:h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-secondary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors">
+                                View Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="p-8 lg:p-12">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium">Featured</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Production</span>
+                        </div>
+                        
+                        <h3 class="text-2xl md:text-3xl font-bold text-primary mb-4">AI-Powered Analytics Dashboard</h3>
+                        <p class="text-text-secondary mb-6 leading-relaxed">
+                            Real-time data visualization platform processing 10M+ data points daily with machine learning insights. 
+                            Built with React, Python, and TensorFlow, featuring sub-second response times and intelligent anomaly detection.
+                        </p>
+                        
+                        <!-- Key Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="text-center p-4 bg-accent rounded-lg">
+                                <div class="text-2xl font-bold text-secondary">10M+</div>
+                                <div class="text-sm text-text-secondary">Data Points/Day</div>
+                            </div>
+                            <div class="text-center p-4 bg-accent rounded-lg">
+                                <div class="text-2xl font-bold text-success">0.3s</div>
+                                <div class="text-sm text-text-secondary">Avg Response</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">React</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Python</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning rounded-full text-sm font-medium">TensorFlow</span>
+                            <span class="px-3 py-1 bg-error/10 text-error rounded-full text-sm font-medium">Redis</span>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <button class="flex-1 bg-secondary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors">
+                                View Case Study
+                            </button>
+                            <button class="flex-1 border-2 border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary hover:text-white transition-all">
+                                GitHub Repository
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                
+                <!-- Project 1: E-Commerce Platform -->
+                <div class="project-card bg-background rounded-xl shadow-soft border border-border overflow-hidden hover:shadow-medium transition-all duration-300 interactive-hover" data-category="web">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="E-Commerce Platform" class="w-full h-48 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success text-white rounded-full text-xs font-medium">Live</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">E-Commerce Platform</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Full-stack marketplace with real-time inventory, payment processing, and advanced search capabilities serving 50K+ active users.</p>
+                        
+                        <!-- GitHub Stats -->
+                        <div class="flex items-center gap-4 mb-4 text-xs text-text-secondary">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>247 stars</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414L2.586 7l3.707-3.707a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>89 forks</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-success rounded-full mr-1"></div>
+                                <span>Updated 2 days ago</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary rounded text-xs font-medium">Next.js</span>
+                            <span class="px-2 py-1 bg-success/10 text-success rounded text-xs font-medium">Node.js</span>
+                            <span class="px-2 py-1 bg-warning/10 text-warning rounded text-xs font-medium">MongoDB</span>
+                            <span class="px-2 py-1 bg-error/10 text-error rounded text-xs font-medium">Stripe</span>
+                        </div>
+                        
+                        <!-- Performance Metrics -->
+                        <div class="bg-accent rounded-lg p-3 mb-4">
+                            <div class="text-xs text-text-secondary mb-2">Performance Metrics</div>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div>Load Time: <span class="font-semibold text-success">1.2s</span></div>
+                                <div>Users: <span class="font-semibold text-primary">52K+</span></div>
+                                <div>Uptime: <span class="font-semibold text-success">99.9%</span></div>
+                                <div>Revenue: <span class="font-semibold text-secondary">$2.1M</span></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex gap-2">
+                            <button class="flex-1 bg-secondary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary/90 transition-colors">
+                                Case Study
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Mobile Fitness App -->
+                <div class="project-card bg-background rounded-xl shadow-soft border border-border overflow-hidden hover:shadow-medium transition-all duration-300 interactive-hover" data-category="mobile">
+                    <div class="relative">
+                        <img src="https://images.pixabay.com/photo/2017/08/06/12/06/people-2592247_1280.jpg" alt="Mobile Fitness App" class="w-full h-48 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-warning text-white rounded-full text-xs font-medium">Beta</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">FitTrack Pro</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Cross-platform fitness app with AI-powered workout recommendations, real-time form analysis, and social challenges.</p>
+                        
+                        <!-- GitHub Stats -->
+                        <div class="flex items-center gap-4 mb-4 text-xs text-text-secondary">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>156 stars</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414L2.586 7l3.707-3.707a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>34 forks</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-warning rounded-full mr-1"></div>
+                                <span>Updated 1 week ago</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary rounded text-xs font-medium">React Native</span>
+                            <span class="px-2 py-1 bg-success/10 text-success rounded text-xs font-medium">Firebase</span>
+                            <span class="px-2 py-1 bg-warning/10 text-warning rounded text-xs font-medium">TensorFlow</span>
+                            <span class="px-2 py-1 bg-error/10 text-error rounded text-xs font-medium">HealthKit</span>
+                        </div>
+                        
+                        <!-- Performance Metrics -->
+                        <div class="bg-accent rounded-lg p-3 mb-4">
+                            <div class="text-xs text-text-secondary mb-2">App Metrics</div>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div>Downloads: <span class="font-semibold text-success">25K+</span></div>
+                                <div>Rating: <span class="font-semibold text-warning">4.8★</span></div>
+                                <div>Retention: <span class="font-semibold text-primary">78%</span></div>
+                                <div>Sessions: <span class="font-semibold text-secondary">12min</span></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex gap-2">
+                            <button class="flex-1 bg-secondary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary/90 transition-colors">
+                                Case Study
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Blockchain DeFi Protocol -->
+                <div class="project-card bg-background rounded-xl shadow-soft border border-border overflow-hidden hover:shadow-medium transition-all duration-300 interactive-hover" data-category="blockchain">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="DeFi Protocol" class="w-full h-48 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2832&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success text-white rounded-full text-xs font-medium">Mainnet</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">YieldMax Protocol</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Decentralized yield farming protocol with automated strategies, governance tokens, and cross-chain compatibility.</p>
+                        
+                        <!-- GitHub Stats -->
+                        <div class="flex items-center gap-4 mb-4 text-xs text-text-secondary">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>89 stars</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414L2.586 7l3.707-3.707a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>23 forks</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-success rounded-full mr-1"></div>
+                                <span>Updated 3 days ago</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary rounded text-xs font-medium">Solidity</span>
+                            <span class="px-2 py-1 bg-success/10 text-success rounded text-xs font-medium">Web3.js</span>
+                            <span class="px-2 py-1 bg-warning/10 text-warning rounded text-xs font-medium">Hardhat</span>
+                            <span class="px-2 py-1 bg-error/10 text-error rounded text-xs font-medium">OpenZeppelin</span>
+                        </div>
+                        
+                        <!-- Performance Metrics -->
+                        <div class="bg-accent rounded-lg p-3 mb-4">
+                            <div class="text-xs text-text-secondary mb-2">Protocol Metrics</div>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div>TVL: <span class="font-semibold text-success">$2.1M</span></div>
+                                <div>APY: <span class="font-semibold text-warning">12.5%</span></div>
+                                <div>Users: <span class="font-semibold text-primary">1.2K</span></div>
+                                <div>Volume: <span class="font-semibold text-secondary">$850K</span></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex gap-2">
+                            <button class="flex-1 bg-secondary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary/90 transition-colors">
+                                Case Study
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: AI Content Generator -->
+                <div class="project-card bg-background rounded-xl shadow-soft border border-border overflow-hidden hover:shadow-medium transition-all duration-300 interactive-hover" data-category="ai">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2832&auto=format&fit=crop" alt="AI Content Generator" class="w-full h-48 object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success text-white rounded-full text-xs font-medium">Live</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">ContentAI Studio</h3>
+                        <p class="text-text-secondary mb-4 text-sm">AI-powered content generation platform with GPT integration, custom training models, and multi-format output capabilities.</p>
+                        
+                        <!-- GitHub Stats -->
+                        <div class="flex items-center gap-4 mb-4 text-xs text-text-secondary">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>312 stars</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414L2.586 7l3.707-3.707a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>67 forks</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-success rounded-full mr-1"></div>
+                                <span>Updated 1 day ago</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary rounded text-xs font-medium">Python</span>
+                            <span class="px-2 py-1 bg-success/10 text-success rounded text-xs font-medium">FastAPI</span>
+                            <span class="px-2 py-1 bg-warning/10 text-warning rounded text-xs font-medium">OpenAI</span>
+                            <span class="px-2 py-1 bg-error/10 text-error rounded text-xs font-medium">PostgreSQL</span>
+                        </div>
+                        
+                        <!-- Performance Metrics -->
+                        <div class="bg-accent rounded-lg p-3 mb-4">
+                            <div class="text-xs text-text-secondary mb-2">AI Metrics</div>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div>Generated: <span class="font-semibold text-success">1.2M</span></div>
+                                <div>Accuracy: <span class="font-semibold text-warning">94.2%</span></div>
+                                <div>Speed: <span class="font-semibold text-primary">2.1s</span></div>
+                                <div>Users: <span class="font-semibold text-secondary">8.5K</span></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex gap-2">
+                            <button class="flex-1 bg-secondary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary/90 transition-colors">
+                                Case Study
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Real-time Chat Platform -->
+                <div class="project-card bg-background rounded-xl shadow-soft border border-border overflow-hidden hover:shadow-medium transition-all duration-300 interactive-hover" data-category="web">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1591062/pexels-photo-1591062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Real-time Chat Platform" class="w-full h-48 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success text-white rounded-full text-xs font-medium">Live</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">TeamSync Chat</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Enterprise-grade real-time messaging platform with end-to-end encryption, file sharing, and video conferencing integration.</p>
+                        
+                        <!-- GitHub Stats -->
+                        <div class="flex items-center gap-4 mb-4 text-xs text-text-secondary">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>198 stars</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414L2.586 7l3.707-3.707a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>45 forks</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-success rounded-full mr-1"></div>
+                                <span>Updated 5 hours ago</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary rounded text-xs font-medium">Vue.js</span>
+                            <span class="px-2 py-1 bg-success/10 text-success rounded text-xs font-medium">Socket.io</span>
+                            <span class="px-2 py-1 bg-warning/10 text-warning rounded text-xs font-medium">Express</span>
+                            <span class="px-2 py-1 bg-error/10 text-error rounded text-xs font-medium">Redis</span>
+                        </div>
+                        
+                        <!-- Performance Metrics -->
+                        <div class="bg-accent rounded-lg p-3 mb-4">
+                            <div class="text-xs text-text-secondary mb-2">Platform Metrics</div>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div>Messages: <span class="font-semibold text-success">5.2M</span></div>
+                                <div>Latency: <span class="font-semibold text-warning">45ms</span></div>
+                                <div>Uptime: <span class="font-semibold text-primary">99.8%</span></div>
+                                <div>Teams: <span class="font-semibold text-secondary">340</span></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex gap-2">
+                            <button class="flex-1 bg-secondary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary/90 transition-colors">
+                                Case Study
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: IoT Dashboard -->
+                <div class="project-card bg-background rounded-xl shadow-soft border border-border overflow-hidden hover:shadow-medium transition-all duration-300 interactive-hover" data-category="web">
+                    <div class="relative">
+                        <img src="https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="IoT Dashboard" class="w-full h-48 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2934&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success text-white rounded-full text-xs font-medium">Live</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">SmartHome Hub</h3>
+                        <p class="text-text-secondary mb-4 text-sm">Comprehensive IoT device management platform with real-time monitoring, automation rules, and predictive analytics.</p>
+                        
+                        <!-- GitHub Stats -->
+                        <div class="flex items-center gap-4 mb-4 text-xs text-text-secondary">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>134 stars</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414L2.586 7l3.707-3.707a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>28 forks</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-success rounded-full mr-1"></div>
+                                <span>Updated 4 days ago</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary rounded text-xs font-medium">Angular</span>
+                            <span class="px-2 py-1 bg-success/10 text-success rounded text-xs font-medium">MQTT</span>
+                            <span class="px-2 py-1 bg-warning/10 text-warning rounded text-xs font-medium">InfluxDB</span>
+                            <span class="px-2 py-1 bg-error/10 text-error rounded text-xs font-medium">Grafana</span>
+                        </div>
+                        
+                        <!-- Performance Metrics -->
+                        <div class="bg-accent rounded-lg p-3 mb-4">
+                            <div class="text-xs text-text-secondary mb-2">IoT Metrics</div>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div>Devices: <span class="font-semibold text-success">15K+</span></div>
+                                <div>Uptime: <span class="font-semibold text-warning">99.7%</span></div>
+                                <div>Data/Day: <span class="font-semibold text-primary">2.8GB</span></div>
+                                <div>Homes: <span class="font-semibold text-secondary">3.2K</span></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex gap-2">
+                            <button class="flex-1 bg-secondary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary/90 transition-colors">
+                                Case Study
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm font-medium hover:bg-accent transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all">
+                    Load More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture Showcase -->
+    <section class="py-20 bg-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Technical Architecture Deep Dive</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Explore the system design and architectural decisions behind complex solutions</p>
+            </div>
+            
+            <div class="bg-background rounded-2xl shadow-soft overflow-hidden">
+                <div class="bg-surface px-6 py-4 border-b border-border">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-error rounded-full"></div>
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                            </div>
+                            <span class="font-mono text-sm text-text-secondary">microservices-architecture.yaml</span>
+                        </div>
+                        <button class="bg-secondary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary/90 transition-colors">
+                            View Full Diagram
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="p-8">
+                    <!-- Architecture Diagram -->
+                    <div class="bg-accent rounded-xl p-8 mb-8">
+                        <svg class="w-full h-64" viewBox="0 0 800 300" fill="none">
+                            <!-- API Gateway -->
+                            <rect x="350" y="20" width="100" height="40" rx="8" fill="var(--color-secondary)" opacity="0.2"/>
+                            <text x="400" y="45" text-anchor="middle" class="text-sm font-medium fill-secondary">API Gateway</text>
+                            
+                            <!-- Load Balancer -->
+                            <rect x="350" y="80" width="100" height="40" rx="8" fill="var(--color-primary)" opacity="0.2"/>
+                            <text x="400" y="105" text-anchor="middle" class="text-sm font-medium fill-primary">Load Balancer</text>
+                            
+                            <!-- Microservices -->
+                            <rect x="150" y="150" width="80" height="40" rx="8" fill="var(--color-success)" opacity="0.2"/>
+                            <text x="190" y="175" text-anchor="middle" class="text-xs font-medium fill-success">User Service</text>
+                            
+                            <rect x="260" y="150" width="80" height="40" rx="8" fill="var(--color-success)" opacity="0.2"/>
+                            <text x="300" y="175" text-anchor="middle" class="text-xs font-medium fill-success">Auth Service</text>
+                            
+                            <rect x="370" y="150" width="80" height="40" rx="8" fill="var(--color-success)" opacity="0.2"/>
+                            <text x="410" y="175" text-anchor="middle" class="text-xs font-medium fill-success">Order Service</text>
+                            
+                            <rect x="480" y="150" width="80" height="40" rx="8" fill="var(--color-success)" opacity="0.2"/>
+                            <text x="520" y="175" text-anchor="middle" class="text-xs font-medium fill-success">Payment Service</text>
+                            
+                            <rect x="590" y="150" width="80" height="40" rx="8" fill="var(--color-success)" opacity="0.2"/>
+                            <text x="630" y="175" text-anchor="middle" class="text-xs font-medium fill-success">Notification</text>
+                            
+                            <!-- Databases -->
+                            <rect x="150" y="220" width="80" height="40" rx="8" fill="var(--color-warning)" opacity="0.2"/>
+                            <text x="190" y="245" text-anchor="middle" class="text-xs font-medium fill-warning">PostgreSQL</text>
+                            
+                            <rect x="260" y="220" width="80" height="40" rx="8" fill="var(--color-warning)" opacity="0.2"/>
+                            <text x="300" y="245" text-anchor="middle" class="text-xs font-medium fill-warning">Redis</text>
+                            
+                            <rect x="370" y="220" width="80" height="40" rx="8" fill="var(--color-warning)" opacity="0.2"/>
+                            <text x="410" y="245" text-anchor="middle" class="text-xs font-medium fill-warning">MongoDB</text>
+                            
+                            <rect x="480" y="220" width="80" height="40" rx="8" fill="var(--color-warning)" opacity="0.2"/>
+                            <text x="520" y="245" text-anchor="middle" class="text-xs font-medium fill-warning">Stripe API</text>
+                            
+                            <rect x="590" y="220" width="80" height="40" rx="8" fill="var(--color-warning)" opacity="0.2"/>
+                            <text x="630" y="245" text-anchor="middle" class="text-xs font-medium fill-warning">RabbitMQ</text>
+                            
+                            <!-- Connection Lines -->
+                            <line x1="400" y1="60" x2="400" y2="80" stroke="var(--color-text-secondary)" stroke-width="2"/>
+                            <line x1="400" y1="120" x2="190" y2="150" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            <line x1="400" y1="120" x2="300" y2="150" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            <line x1="400" y1="120" x2="410" y2="150" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            <line x1="400" y1="120" x2="520" y2="150" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            <line x1="400" y1="120" x2="630" y2="150" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            
+                            <line x1="190" y1="190" x2="190" y2="220" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            <line x1="300" y1="190" x2="300" y2="220" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            <line x1="410" y1="190" x2="410" y2="220" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            <line x1="520" y1="190" x2="520" y2="220" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                            <line x1="630" y1="190" x2="630" y2="220" stroke="var(--color-text-secondary)" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- Architecture Details -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- System Components -->
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary mb-4">System Components</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center p-3 bg-accent rounded-lg">
+                                    <div class="w-3 h-3 bg-secondary rounded-full mr-3"></div>
+                                    <div>
+                                        <div class="font-medium text-primary">API Gateway</div>
+                                        <div class="text-sm text-text-secondary">Request routing & rate limiting</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 bg-accent rounded-lg">
+                                    <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                                    <div>
+                                        <div class="font-medium text-primary">Microservices</div>
+                                        <div class="text-sm text-text-secondary">Independent, scalable services</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 bg-accent rounded-lg">
+                                    <div class="w-3 h-3 bg-warning rounded-full mr-3"></div>
+                                    <div>
+                                        <div class="font-medium text-primary">Data Layer</div>
+                                        <div class="text-sm text-text-secondary">Polyglot persistence strategy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Performance Metrics -->
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary mb-4">Performance Metrics</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm text-text-secondary">Response Time</span>
+                                        <span class="text-sm font-medium text-success">< 200ms</span>
+                                    </div>
+                                    <div class="h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="h-full bg-success rounded-full" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm text-text-secondary">Throughput</span>
+                                        <span class="text-sm font-medium text-secondary">10K req/sec</span>
+                                    </div>
+                                    <div class="h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="h-full bg-secondary rounded-full" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm text-text-secondary">Availability</span>
+                                        <span class="text-sm font-medium text-primary">99.9%</span>
+                                    </div>
+                                    <div class="h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="h-full bg-primary rounded-full" style="width: 99%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Quality & Testing -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Code Quality & Testing Standards</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Commitment to maintainable, tested, and documented code</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Test Coverage -->
+                <div class="bg-accent rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-success mb-2">94%</div>
+                    <div class="text-sm text-text-secondary">Test Coverage</div>
+                </div>
+                
+                <!-- Code Quality -->
+                <div class="bg-accent rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-secondary mb-2">A+</div>
+                    <div class="text-sm text-text-secondary">Code Quality</div>
+                </div>
+                
+                <!-- Documentation -->
+                <div class="bg-accent rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-warning mb-2">100%</div>
+                    <div class="text-sm text-text-secondary">API Documentation</div>
+                </div>
+                
+                <!-- Performance -->
+                <div class="bg-accent rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-primary mb-2">98</div>
+                    <div class="text-sm text-text-secondary">Lighthouse Score</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-secondary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7L16 2z"/>
+                            <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-bold">DevPortfolio Pro</span>
+                    </div>
+                    <p class="text-white/80 mb-6 max-w-md">Engineering solutions that matter through intelligent craftsmanship and innovative problem-solving.</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-secondary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-secondary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-secondary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage_interactive_technical_showcase.html" class="text-white/60 hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="engineering_journey_professional_timeline.html" class="text-white/60 hover:text-secondary transition-colors">Journey</a></li>
+                        <li><a href="skills_observatory_dynamic_competency_matrix.html" class="text-white/60 hover:text-secondary transition-colors">Skills</a></li>
+                        <li><a href="open_source_contributions_community_impact.html" class="text-white/60 hover:text-secondary transition-colors">Open Source</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Get In Touch</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact_command_center_professional_networking_hub.html" class="text-white/60 hover:text-secondary transition-colors">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/60 hover:text-secondary transition-colors">alex@devportfolio.pro</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/60 hover:text-secondary transition-colors">Schedule Call</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/60 hover:text-secondary transition-colors">Download Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-12 pt-8 text-center">
+                <p class="text-white/60">© 2025 DevPortfolio Pro. All Rights Reserved. Built with intelligent craftsmanship.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        const searchInput = document.getElementById('project-search');
+        const resetButton = document.getElementById('reset-filters');
+
+        // Filter by category
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-secondary', 'text-primary');
+                    btn.classList.add('bg-surface', 'text-text-primary');
+                });
+                this.classList.add('active', 'bg-secondary', 'text-primary');
+                this.classList.remove('bg-surface', 'text-text-primary');
+
+                const filter = this.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fade-in-up');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            
+            projectCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                const techStack = Array.from(card.querySelectorAll('.px-2')).map(tag => tag.textContent.toLowerCase()).join(' ');
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm) || techStack.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Reset filters
+        resetButton.addEventListener('click', function() {
+            // Reset filter buttons
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-secondary', 'text-primary');
+                btn.classList.add('bg-surface', 'text-text-primary');
+            });
+            filterButtons[0].classList.add('active', 'bg-secondary', 'text-primary');
+            filterButtons[0].classList.remove('bg-surface', 'text-text-primary');
+
+            // Clear search
+            searchInput.value = '';
+
+            // Show all cards
+            projectCards.forEach(card => {
+                card.style.display = 'block';
+            });
+        });
+
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all project cards
+        projectCards.forEach(card => {
+            observer.observe(card);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
